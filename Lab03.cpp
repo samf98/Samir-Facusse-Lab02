@@ -6,7 +6,7 @@ using namespace std;
 
 void Domingos();
 
-void DivisionSint();
+void DivisionSintetica();
 
 void Permutaciones(int);
 
@@ -27,7 +27,7 @@ int main()
 			}
 			case 2:
 			{
-				
+				DivisionSintetica();	
 				break;
 			}
 			case 3:
@@ -98,30 +98,45 @@ void DivisionSintetica()
 	cin>>size;
 	int matriz[size][3];
 	
-	for(int i = size-1; i >= 0; i--)
+	for(int i = 0; i <= size; i++)
 	{
-		cout<<"x^"<<size;
-		cin>>matriz[i][0];
-		matriz[i][2]=0;
-		matriz[i][3]=0;
+		cout<<"x^"<<i<<"  ";
+		cin>>matriz[0][i];
+		matriz[2][i]=0;
+		matriz[3][i]=0;
 	}
 	cout<<"Ingrese a ";
 	cin>> divisor;
-	while(matriz[size-1][3]!=0)
+	int pasos = 0;
+	int resta = 0;
+	int finish = 0;
+	do
 	{
-		for(int i = 0; i < size-1;i++)
+		if(pasos==0)
+			matriz[size-1][0] = matriz[0][0];
+		else
 		{
-			for(int j = 0; j < 3; <++)
+			resta = matriz[3][finish]*divisor;
+			cout<<resta<<endl;
+			matriz[3][pasos]=matriz[0][pasos]-resta;
+			finish++;
+		}
+		for(int i = 0; i < size;i++)
+		{
+			for(int j = 0; j < 3; j++)
 			{
-				cout<<matriz[i][o]<<"  ";
+				cout<<matriz[i][j]<<"  ";
 			}
 			if(i==0)
-				cout<< divisor <<endl;
+				cout << " | "<< divisor <<endl;
 			else
 				cout<<endl;
-			cout<<"-------------------------"<<endl;
+			if(i==1)
+				cout<<"-------------------------"<<endl;
 		}
-	}
+		cout<<endl<<endl;
+		pasos++;
+	}while(pasos < size);
 }
 
 void Permutaciones(int numero)
