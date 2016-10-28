@@ -116,9 +116,10 @@ void DivisionSintetica()
 			matriz[size-1][0] = matriz[0][0];
 		else
 		{
-			resta = matriz[3][finish]*divisor;
+			resta = matriz[2][finish]*divisor;
 			cout<<resta<<endl;
-			matriz[3][pasos]=matriz[0][pasos]-resta;
+			matriz[1][pasos]=resta;
+			matriz[2][pasos]=matriz[0][pasos]-resta;
 			finish++;
 		}
 		for(int i = 0; i < size;i++)
