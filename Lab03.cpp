@@ -8,8 +8,6 @@ void Domingos();
 
 void DivisionSint();
 
-void crearMatriz(int**, int*);
-
 void Permutaciones(int);
 
 int main()
@@ -47,10 +45,10 @@ int main()
 void Domingos()
 {
 	int dia_semana = 2;
-	int domingos = -1;
+	int domingos = 0;
 	int bisiesto = 3;
 	int dias_mes = 0;
-	for(int year = 1900; year < 2000; year++)
+	for(int year = 1900; year <= 1999; year++)
 	{
 		//Validando si es bisiesto
 		if(year%4==0)
@@ -95,15 +93,16 @@ void Domingos()
 void DivisionSintetica()
 {
 	int size;
-	int* ecuacion[size];
 	cout<<"Grado del polinomio: ";
 	cin>>size;
-	int** matriz[size][3];
+	int matriz[size][3];
 	
-}
-
-void crearMatriz(int** matriz, int* ecuacion)
-{
+	for(int i = size-1; i >= 0; i--)
+	{
+		cout<<"x^"<<size;
+		cin>>matriz[i][0];
+	}
+	cout<<"Ingrese a ";
 	
 }
 
