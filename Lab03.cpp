@@ -8,6 +8,8 @@ void Domingos();
 
 void DivisionSint();
 
+void crearMatriz(int**, int*);
+
 void Permutaciones(int);
 
 int main()
@@ -93,8 +95,15 @@ void Domingos()
 void DivisionSintetica()
 {
 	int size;
+	int* ecuacion[size];
 	cout<<"Grado del polinomio: ";
 	cin>>size;
+	int** matriz[size][3];
+	
+}
+
+void crearMatriz(int** matriz, int* ecuacion)
+{
 	
 }
 
