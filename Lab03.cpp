@@ -37,10 +37,10 @@ int main()
 void Domingos()
 {
 	int dia_semana = 2;
-	int domingos = 0;
+	int domingos = -1;
 	int bisiesto = 3;
 	int dias_mes = 0;
-	for(int year = 1900; year <= 2000; year++)
+	for(int year = 1900; year < 2000; year++)
 	{
 		if(year%4==0)
 			bisiesto = 4;
@@ -53,12 +53,9 @@ void Domingos()
 				dias_mes = 30;
 
 			if(mes==2)
-			{
-				if(bisiesto==4)
-					dias_mes = 29;
-				else
-					dias_mes = 28;
-			}
+				dias_mes=28;
+			if(mes==2&&bisiesto==4)
+				dias_mes=29;
 
 			if(mes==1||mes==3||mes==5||mes==7||mes==8||mes==10||mes==12)
 				dias_mes == 31;
@@ -69,7 +66,7 @@ void Domingos()
                                         domingos++;
 
 				if(dia_semana==7)
-					dia_semana==1;
+					dia_semana=1;
 				else
 					dia_semana++;
 			}
