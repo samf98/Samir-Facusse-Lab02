@@ -93,6 +93,7 @@ void Domingos()
 void DivisionSintetica()
 {
 	int size;
+	int divisor;
 	cout<<"Grado del polinomio: ";
 	cin>>size;
 	int matriz[size][3];
@@ -101,9 +102,15 @@ void DivisionSintetica()
 	{
 		cout<<"x^"<<size;
 		cin>>matriz[i][0];
+		matriz[i][2]=0;
+		matriz[i][3]=0;
 	}
 	cout<<"Ingrese a ";
-	
+	cin>> divisor;
+	while(matriz[3][3]!=0)
+	{
+		
+	}
 }
 
 void Permutaciones(int numero)
@@ -114,48 +121,48 @@ void Permutaciones(int numero)
 
 	if(numeros.size() == 1)
 	{
-		cout<<numeros[0]<<endl;
+		cout << numeros[0] << endl;
 	}
 	else if(numeros.size() == 2)
 	{
-		cout<<numeros[0]<<numeros[1]<<endl;
-		cout<<numeros[1]<<numeros[0]<<endl;
+		cout << numeros[0] << numeros[1] << endl;
+		cout << numeros[1] << numeros[0] << endl;
 	}
 	else if(numeros.size() == 3)
 	{
-		cout<<numeros[0]<<numeros[1]<<numeros[2]<<endl;
-		cout<<numeros[0]<<numeros[2]<<numeros[1]<<endl;
-		cout<<numeros[1]<<numeros[0]<<numeros[2]<<endl;
-		cout<<numeros[1]<<numeros[2]<<numeros[0]<<endl;
-		cout<<numeros[2]<<numeros[0]<<numeros[1]<<endl;
-		cout<<numeros[2]<<numeros[1]<<numeros[0]<<endl;
+		cout << numeros[0] << numeros[1] << numeros[2] << endl;
+		cout << numeros[0] << numeros[2] << numeros[1] << endl;
+		cout << numeros[1] << numeros[0] << numeros[2] << endl;
+		cout << numeros[1] << numeros[2] << numeros[0] << endl;
+		cout << numeros[2] << numeros[0] << numeros[1] << endl;
+		cout << numeros[2] << numeros[1] << numeros[0] << endl;
 	}
 	else if(numeros.size() == 4)
 	{
-		cout<<numeros[0]<<numeros[1]<<numeros[2]<<numeros[3]<<endl;
-		cout<<numeros[0]<<numeros[1]<<numeros[3]<<numeros[2]<<endl;
-		cout<<numeros[0]<<numeros[2]<<numeros[1]<<numeros[3]<<endl;
-		cout<<numeros[0]<<numeros[2]<<numeros[3]<<numeros[1]<<endl;
-		cout<<numeros[0]<<numeros[3]<<numeros[1]<<numeros[2]<<endl;
-		cout<<numeros[0]<<numeros[3]<<numeros[2]<<numeros[1]<<endl;
-		cout<<numeros[1]<<numeros[2]<<numeros[0]<<numeros[3]<<endl;
-                cout<<numeros[1]<<numeros[2]<<numeros[3]<<numeros[0]<<endl;
-                cout<<numeros[1]<<numeros[0]<<numeros[3]<<numeros[2]<<endl;
-                cout<<numeros[1]<<numeros[0]<<numeros[2]<<numeros[3]<<endl;
-                cout<<numeros[1]<<numeros[3]<<numeros[0]<<numeros[2]<<endl;
-                cout<<numeros[1]<<numeros[3]<<numeros[2]<<numeros[0]<<endl;
-		cout<<numeros[2]<<numeros[1]<<numeros[3]<<numeros[0]<<endl;
-                cout<<numeros[2]<<numeros[1]<<numeros[0]<<numeros[3]<<endl;
-                cout<<numeros[2]<<numeros[2]<<numeros[2]<<numeros[0]<<endl;
-                cout<<numeros[2]<<numeros[2]<<numeros[0]<<numeros[2]<<endl;
-                cout<<numeros[2]<<numeros[3]<<numeros[1]<<numeros[2]<<endl;
-                cout<<numeros[2]<<numeros[3]<<numeros[2]<<numeros[1]<<endl;
-		cout<<numeros[3]<<numeros[1]<<numeros[2]<<numeros[0]<<endl;
-                cout<<numeros[3]<<numeros[1]<<numeros[0]<<numeros[2]<<endl;
-                cout<<numeros[3]<<numeros[2]<<numeros[1]<<numeros[0]<<endl;
-                cout<<numeros[3]<<numeros[2]<<numeros[0]<<numeros[1]<<endl;
-                cout<<numeros[3]<<numeros[0]<<numeros[2]<<numeros[2]<<endl;
-                cout<<numeros[3]<<numeros[0]<<numeros[1]<<numeros[1]<<endl;
+		cout << numeros[0] << numeros[1] << numeros[2] << numeros[3] << endl;
+		cout << numeros[0] << numeros[1] << numeros[3] << numeros[2] << endl;
+		cout << numeros[0] << numeros[2] << numeros[1] << numeros[3] << endl;
+		cout << numeros[0] << numeros[2] << numeros[3 ]<< numeros[1] << endl;
+		cout << numeros[0] << numeros[3] << numeros[1 ]<< numeros[2] << endl;
+		cout << numeros[0] << numeros[3] << numeros[2 ]<< numeros[1] << endl;
+		cout << numeros[1] << numeros[2] << numeros[0] << numeros[3] << endl;
+                cout << numeros[1] << numeros[2] << numeros[3] << numeros[0] << endl;
+                cout << numeros[1] << numeros[0] << numeros[3] << numeros[2] << endl;
+                cout << numeros[1] << numeros[0] << numeros[2] << numeros[3] << endl;
+                cout << numeros[1] << numeros[3] << numeros[0] << numeros[2] << endl;
+                cout << numeros[1] << numeros[3] << numeros[2] << numeros[0] << endl;
+		cout << numeros[2] << numeros[1] << numeros[3] << numeros[0] << endl;
+                cout << numeros[2] << numeros[1] << numeros[0] << numeros[3] << endl;
+                cout << numeros[2] << numeros[2] << numeros[2] << numeros[0] << endl;
+                cout << numeros[2] << numeros[2] << numeros[0] << numeros[2] << endl;
+                cout << numeros[2] << numeros[3] << numeros[1] << numeros[2] << endl;
+                cout << numeros[2] << numeros[3] << numeros[2] << numeros[1] << endl;
+		cout << numeros[3] << numeros[1] << numeros[2] << numeros[0] << endl;
+                cout << numeros[3] << numeros[1] << numeros[0] << numeros[2] << endl;
+                cout << numeros[3] << numeros[2] << numeros[1] << numeros[0] << endl;
+                cout << numeros[3] << numeros[2] << numeros[0] << numeros[1] << endl;
+                cout << numeros[3] << numeros[0] << numeros[2] << numeros[2] << endl;
+                cout << numeros[3] << numeros[0] << numeros[1] << numeros[1] << endl;
 	}
 		
 }
