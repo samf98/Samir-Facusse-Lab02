@@ -16,7 +16,7 @@ int main()
 	int op;
 	do
 	{
-		cout<<"1 - Domingos"<<endl<<"2 - División Sintética"<<endl<<"3 - Permutaciones"<<endl;
+		cout<<"1 - Domingos"<<endl<<"2 - División Sintética"<<endl<<"3 - Permutaciones"<<endl<<"4 - Salir"<<endl;
 		cin >> op;
 		switch(op)
 		{
