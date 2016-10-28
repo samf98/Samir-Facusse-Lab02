@@ -107,9 +107,20 @@ void DivisionSintetica()
 	}
 	cout<<"Ingrese a ";
 	cin>> divisor;
-	while(matriz[3][3]!=0)
+	while(matriz[size-1][3]!=0)
 	{
-		
+		for(int i = 0; i < size-1;i++)
+		{
+			for(int j = 0; j < 3; <++)
+			{
+				cout<<matriz[i][o]<<"  ";
+			}
+			if(i==0)
+				cout<< divisor <<endl;
+			else
+				cout<<endl;
+			cout<<"-------------------------"<<endl;
+		}
 	}
 }
 
